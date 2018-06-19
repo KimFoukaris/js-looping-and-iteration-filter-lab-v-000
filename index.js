@@ -3,7 +3,7 @@ function findMatching(drivers, name) {
   return matchingDrivers;
   }
 
-function fuzzyMatch() {
+function fuzzyMatch(drivers, name) {
   let matchingDrivers = drivers.filter(function(driver) {return driver.toLowerCase().slice(0,2) === name.toLowerCase().slice(0,2);});
   return matchingDrivers;
 }
